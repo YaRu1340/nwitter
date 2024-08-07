@@ -8,12 +8,12 @@ const AppRouter = () => {
     return(
         <Router>
             <Routes>
-        {isLoggedIn ? (
-          <Route exact path="/" element={<Home />}></Route>
-        ) : (
-          <Route exact path="/" element={<Auth />}></Route>
-        )}
-      </Routes>
+                {isLoggedIn ? (
+                <Route exact path="/" element={<Home />}></Route>
+                ) : (
+                <Route exact path="/" element={<Auth />}></Route>
+                )}
+            </Routes>
         </Router>
     );
 };
